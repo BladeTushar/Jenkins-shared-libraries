@@ -6,3 +6,4 @@ withCredentials([usernamePassword(credentialsId: 'dockerhubcred',
                 sh "docker image tag notes-app:latest ${dockerhubUser}/notes-app:latest"
                 sh "docker push ${dockerhubUser}/${ProjectName}:${ImageTag}"
 }
+}
